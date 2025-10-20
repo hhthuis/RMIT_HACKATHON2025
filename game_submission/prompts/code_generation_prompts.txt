@@ -1,0 +1,22 @@
+# Mục đích: Sinh mã game (HTML, CSS, JS)
+
+Prompt gốc:
+> Viết game cứu người lũ lụt bằng HTML/CSS/JS thuần, có màn hình Menu, Play, Notification và Game Over.  
+> Người chơi điều khiển thuyền bằng phím WASD hoặc mũi tên, đón người, né vật cản, đưa về căn cứ 🏥.
+
+Prompt tiếp theo:
+> Thêm HUD hiển thị điểm, sức chứa, số người bỏ lỡ và mạng thuyền.  
+> Khi đủ 3 người thì phải quay lại căn cứ để thả.
+
+> Thêm tính năng nâng cấp sức chứa khi bấm phím Space — tốn 5 điểm, mỗi lần sau +3 điểm.
+
+> Giảm tốc độ di chuyển ban đầu, cho dễ điều khiển hơn.
+
+> Làm màu nước hơi đục, bờ xanh lá, phong cách Y2K.
+
+> Cho ảnh thuyền và ảnh vật cản vào game, thay cho emoji.
+
+Kết quả sinh ra:
+- `index.html`: cấu trúc 4 màn hình (menu, play, notification, game-over)
+- `style.css`: thiết kế Y2K pixel style, hiệu ứng nước chảy, bờ xanh, shadow glow
+- `script.js`: toàn bộ logic di chuyển, spawn, va chạm, tăng độ khó, nâng cấp sức chứa

@@ -1,0 +1,21 @@
+# Mục đích: Giai đoạn hoàn thiện và gỡ lỗi
+
+Các prompt đã sử dụng:
+
+> Khi thuyền xuất hiện thì không nằm ở giữa mà nằm bên góc, sửa lại.  
+> Bệnh viện bên trái không hoạt động, kiểm tra collision.  
+> Cho bờ màu xanh, nước màu hơi đục hơn.  
+> Thuyền di chuyển nhanh quá, giảm tốc lại.  
+> Thêm chế độ nâng cấp sức chứa bằng điểm, phím Space.  
+> Dùng phong cách UI Y2K, hiện đại và sáng.  
+> Đổi các vật cản và người bị nạn thành ảnh pixel tôi upload ở assets/.  
+> Tối ưu code sao cho chạy mượt trên trình duyệt.  
+> Thêm popup “+x an toàn!” khi thả người.  
+> Thêm rung màn hình khi va chạm (shake).  
+> Làm lại water flow animation cho giống sóng nước thật.  
+
+Kết quả sau refine:
+- Giao diện nước – bờ – thuyền đồng nhất pixel tone.  
+- Gameplay mượt, tốc độ cân bằng.  
+- Logic cứu người và va chạm căn cứ hoạt động chính xác.  
+- UI hiện đại, dễ đọc, responsive trên mọi độ phân giải.

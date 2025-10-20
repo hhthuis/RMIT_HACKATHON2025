@@ -1,0 +1,16 @@
+# Mục đích: Brainstorm ý tưởng trò chơi mang tính xã hội
+
+Prompt gốc:
+> Tôi muốn làm một mini game web về đề tài thiên tai hoặc cứu hộ, đơn giản thôi, có thể chơi ngay trên trình duyệt.  
+> Người chơi sẽ điều khiển thuyền cứu người trong lũ lụt, né vật cản, và mang họ về nơi an toàn.
+
+Prompt tiếp theo:
+> Hãy giúp tôi phác thảo gameplay cụ thể, luật chơi và cách tính điểm.  
+> Tôi muốn nó mang thông điệp nhân văn – kiểu "mỗi người được cứu là một niềm hy vọng".
+
+Kết quả cuối:
+> Concept được chọn: **Dòng Lũ Cứu Trợ**  
+> - Chủ đề: cứu hộ người dân bị mắc kẹt trong lũ.  
+> - Người chơi điều khiển thuyền, đón người (🧍/👶), né vật cản (🪨/🌳).  
+> - Đưa họ về căn cứ 🏥 để cộng điểm.  
+> - Nếu để trôi 3 người hoặc va chạm 3 lần thì thua.

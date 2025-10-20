@@ -1,0 +1,22 @@
+# Mục đích: Sinh hình ảnh và tài sản pixel art
+
+Prompt gốc:
+> Tạo cho tôi các hình pixel 16-bit cho game cứu người lũ lụt:
+> - 1 thuyền cứu hộ màu cam nhìn từ trên xuống  
+> - 1 người / em bé vẫy tay cầu cứu  
+> - 2-3 khúc gỗ trôi, 1 tảng đá tròn xám  
+> - Phong cách pixel, viền đen, màu sáng kiểu retro
+
+Prompt tiếp theo:
+> Làm màu nước hơi đục, bờ xanh, tone giống game retro 90s.
+
+Prompt khác:
+> Tôi muốn phong cách pixel art Y2K, đậm chất retro arcade nhưng hiện đại.
+
+Kết quả:
+- Ảnh sinh bằng **Dreamina AI**, lưu trong `/assets/` gồm:
+  - `boat.jpeg` (thuyền cứu hộ)
+  - `victim.jpeg` (người bị nạn)
+  - `wood.jpeg`, `wood1.jpeg` (khúc gỗ)
+  - `rock.jpeg` (tảng đá)
+- Tất cả được tinh chỉnh lại kích thước và dùng trong `script.js`.
