@@ -5,8 +5,8 @@
 
 ## 🎯 Giới thiệu
 **Dòng Lũ Cứu Trợ** là một **web game 2D** giáo dục – mô phỏng công tác **cứu hộ lũ lụt** tại Việt Nam.  
-Người chơi điều khiển thuyền cứu hộ để **đón người dân bị mắc kẹt (👶/🧍)**, **tránh vật cản (🪨/🌳)**  
-và **đưa họ về căn cứ an toàn (🏥)** ở hai bên bờ.
+Người chơi điều khiển thuyền cứu hộ để **đón người dân bị mắc kẹt**, **tránh vật cản**  
+và **đưa họ về căn cứ an toàn** ở hai bên bờ.
 
 Mục tiêu là **cứu được càng nhiều người càng tốt**, đồng thời truyền tải thông điệp về **sự sẻ chia và tinh thần cộng đồng trong thiên tai**.
 
