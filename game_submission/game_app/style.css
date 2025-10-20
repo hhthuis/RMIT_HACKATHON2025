@@ -1,0 +1,151 @@
+/* ========= Reset & Layout ========= */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { height: 100%; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background: #2f2f2f;
+  color: #333;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+/* Screen switching */
+.screen {
+  display: none;
+  position: fixed; inset: 0;
+  display: none;
+  justify-content: center; align-items: center;
+}
+.screen.active { display: flex; }
+#menu-screen, #notification-screen, #game-over-screen {
+  background: rgba(0,0,0,.6);
+  z-index: 100;
+}
+
+/* Modal base */
+.modal {
+  background: #fff; color: #222;
+  width: min(92vw, 540px);
+  padding: 28px 32px;
+  border-radius: 14px;
+  box-shadow: 0 12px 60px rgba(0,0,0,.35);
+  text-align: center;
+}
+.modal h1, .modal h2 { margin-bottom: 10px; }
+.modal p { margin: 8px 0 14px; line-height: 1.5; }
+button {
+  background: #007aff; color: #fff; border: none;
+  padding: 12px 18px; border-radius: 10px; font-weight: 700; cursor: pointer;
+}
+button:hover { filter: brightness(.95); }
+
+/* Notification skin */
+.modal.notification {
+  background: linear-gradient(180deg, #43a047, #2e7d32);
+  color: #fff; border: 3px solid #fff;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.35);
+}
+.modal.notification h2 { color: #ffeb3b; }
+
+/* ========= HUD ========= */
+#game-hud {
+  position: absolute; top: 10px; left: 0; right: 0;
+  display: flex; justify-content: space-evenly; gap: 10px;
+  z-index: 10; color: #fff; font-weight: 700;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.7);
+}
+#missed-count.danger { color: #ff3b30; transform: scale(1.06); }
+#capacity.full { color: #ffcc00; transform: scale(1.06); }
+
+/* ========= Game World ========= */
+/* Responsive hình vuông, tối đa 720px, giữ tỉ lệ */
+#game-world {
+  width: min(92vmin, 720px);
+  aspect-ratio: 1 / 1;
+  background: #3498db;
+  position: relative;
+  border: 6px solid #1f6d99;
+  border-radius: 16px;
+  box-shadow: 0 12px 50px rgba(0,0,0,.45);
+
+  /* Hiệu ứng nước chảy */
+  background-image: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.12) 25%, transparent 25%,
+    transparent 50%, rgba(255,255,255,0.12) 50%,
+    rgba(255,255,255,0.12) 75%, transparent 75%, transparent
+  );
+  background-size: 60px 60px;
+  animation: water-flow 5s linear infinite;
+}
+@keyframes water-flow { to { background-position-y: 120px; } }
+
+/* Banks */
+.bank {
+  position: absolute; top: 0; height: 100%;
+  width: 11%;
+  background: #70ad47; border-color: #5a8b3c; border-style: solid;
+}
+#left-bank { left: 0; border-right-width: 5px; }
+#right-bank { right: 0; border-left-width: 5px; }
+
+/* Safe zones (căn cứ), nằm trong bank, ở two bottom corners */
+.safe-zone {
+  position: absolute;
+  width: 9.5%;
+  aspect-ratio: 1/1;
+  background: #2ecc71;
+  border: 4px solid #27ae60;
+  border-radius: 10px;
+  display: grid; place-items: center;
+  font-size: clamp(18px, 6vmin, 34px);
+  z-index: 3;
+  bottom: 1.2%;
+}
+
+/* Đẩy ra khỏi bờ, vào trong lòng sông */
+#safe-zone-left  { left: calc(11% + 1.6%); }
+#safe-zone-right { right: calc(11% + 1.6%); }
+
+/* Player boat */
+#player-boat {
+  --w: 6.2%;           /* tương đối khung */
+  --h: calc(var(--w)*1.5);
+  width: var(--w); height: var(--h);
+  background: #e67e22; border: 3px solid #d35400;
+  border-radius: 20px 20px 6px 6px;
+  position: absolute; z-index: 4;
+  transform: translate(0,0); transition: transform 0.04s linear;
+}
+
+/* Entities */
+.entity {
+  position: absolute; z-index: 2;
+  width: 5%; aspect-ratio: 1 / 1;
+  display: grid; place-items: center;
+  font-size: clamp(16px, 5.2vmin, 30px);
+}
+
+/* Floating feedback text */
+.feedback-text {
+  position: absolute; left: 50%; top: 40%;
+  transform: translateX(-50%);
+  font-weight: 800; color: #ffcc00;
+  text-shadow: 2px 2px 0 #000;
+  animation: float-fade 1.4s forwards;
+  z-index: 20; pointer-events: none;
+}
+@keyframes float-fade {
+  from { opacity: 1; transform: translate(-50%, 0); }
+  to   { opacity: 0; transform: translate(-50%, -58px); }
+}
+
+/* Shake on hit */
+@keyframes shake {
+  0%,100% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); }
+  75% { transform: translateX(-6px); }
+}
+#game-world.shake { animation: shake .28s; }
