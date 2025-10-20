@@ -33,7 +33,7 @@ Mục tiêu là **cứu được càng nhiều người càng tốt**, đồng t
 
 1. Tải toàn bộ thư mục `game_submission/` về máy.  
 2. Mở file: "game_submission/game_app/index.html"
-3. 3. Game sẽ tự chạy ngay trong **trình duyệt (Chrome / Edge / Firefox)** — không cần cài đặt.
+3. Game sẽ tự chạy ngay trong **trình duyệt (Chrome / Edge / Firefox)** — không cần cài đặt.
 
 ---
 
