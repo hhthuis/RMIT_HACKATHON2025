@@ -31,14 +31,9 @@ Mục tiêu là **cứu được càng nhiều người càng tốt**, đồng t
 
 ## 🌊 Cách chạy game
 
-### Cách 1 — Dành cho người dùng
 1. Tải toàn bộ thư mục `game_submission/` về máy.  
 2. Mở file: "game_submission/game_app/index.html"
 3. 3. Game sẽ tự chạy ngay trong **trình duyệt (Chrome / Edge / Firefox)** — không cần cài đặt.
-
-### Cách 2 — Chạy trực tiếp trên GitHub Pages (nếu bạn đã deploy)
-> Link demo: *(điền link GitHub Pages của bạn sau khi public)*  
-> Ví dụ: `https://yourusername.github.io/game_submission/game_app/index.html`
 
 ---
 
