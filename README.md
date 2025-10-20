@@ -39,7 +39,7 @@ Mục tiêu là **cứu được càng nhiều người càng tốt**, đồng t
 
 ## 🧠 Ý tưởng & Thông điệp
 Trò chơi thể hiện **thông điệp nhân văn**:  
-> “Cứu giúp người khác là gieo hi vọng.”  
+> “Thương người như thể thương thân.”  
 
 Thông qua gameplay đơn giản mà căng thẳng, người chơi hiểu hơn về:
 - Áp lực của người làm cứu hộ.  
